@@ -339,7 +339,7 @@ the paper. The GitHub "Cite this repository" button reads from
 
 **Aminhossein Saneie**
 ✉ &nbsp; *[amin.hosseini1@aut.ac.ir]*  &nbsp; 
-🐙 &nbsp; [github.com/&lt;YOUR_USERNAME&gt;](https://github.com/<amiin10>)
+🐙 &nbsp; [github.com/&lt;Amiin10&gt;](https://github.com/<amiin10>)
 🔬 &nbsp; *Department of Mechanical Engineering, Amirkabir University of Technology (Tehran Polytechnic*
 
 Bug reports, feature requests, and questions are very welcome via
