@@ -101,54 +101,7 @@ Two optional switches (off by default for 1-D PDEs, on for Navier-Stokes):
 
 ```
 ePINN-AF/
-├── ePINN_AF/                       ← the core package (architecture + utilities)
-│   ├── model.py                      AttentionFuzzyLayer, AFPINN
-│   ├── utils.py                      seed_torch, get_device, diagnostics
-│   └── __init__.py
-│
-├── Burgers/                        ← 1-D viscous Burgers (shock formation)
-│   ├── train_burgers_base.py         M=4 rules, fast baseline
-│   ├── train_burgers_highcap.py      M=8 rules, more accurate
-│   ├── train_burgers_spaceonly.py    ablation: partition_dims=[x]
-│   ├── plot_burgers.py
-│   └── README.md
-│
-├── AllenCahn/                      ← cubic-reaction front propagation
-│   ├── train_ac_base.py              M=4
-│   ├── train_ac_manyrules.py         M=8 (~10× lower error)
-│   ├── train_ac_long.py              30k Adam + LR-step decay
-│   ├── plot_ac.py
-│   └── README.md
-│
-├── KdV/                            ← Korteweg-de Vries (dispersive solitons)
-│   ├── train_kdv_base.py             M=8
-│   ├── train_kdv_manyrules.py        M=16 for multi-soliton
-│   ├── train_kdv_deep.py             deeper backbone for smoother u_xxx
-│   ├── plot_kdv.py
-│   └── README.md
-│
-├── Poisson/                        ← multi-frequency BVP (spectral bias benchmark)
-│   ├── train_poisson_2d.py           Δu = f on [-5,5]², AMP=0.1, K=8
-│   ├── train_poisson_3d.py           same family in 3D
-│   ├── train_poisson_highfreq.py     stress test: AMP=0.4, K=16
-│   ├── plot_poisson.py
-│   └── README.md
-│
-├── NavierStokes/                   ← 2-D incompressible NS, cylinder wake Re=100
-│   ├── train_ns_time_partition.py    recommended: partition_dims=[t]
-│   ├── train_ns_full_partition.py    manuscript variant
-│   ├── train_ns_no_direct.py         ablation: no direct head
-│   ├── plot_ns.py
-│   └── README.md
-│
-├── datasets/                       ← place .mat files here (see README)
-├── assets/                         ← diagrams used in this README
-│
-├── README.md                       (this file)
-├── LICENSE                         MIT
-├── CITATION.cff                    GitHub citation metadata
-├── requirements.txt
-└── .gitignore
+
 ```
 
 ---
@@ -156,7 +109,7 @@ ePINN-AF/
 ## Installation
 
 ```bash
-git clone https://github.com/<YOUR_USERNAME>/ePINN-AF.git
+git clone https://github.com/<amiin10>/ePINN-AF.git
 cd ePINN-AF
 python -m venv .venv && source .venv/bin/activate   # optional
 pip install -r requirements.txt
@@ -235,21 +188,20 @@ of `torch.autograd.grad` calls) and an optimizer. See any of the
 > this repo; exact figures depend on hardware, PyTorch version, and seed.
 > All errors are relative L² unless otherwise noted.
 
-| PDE                        | Script (this repo)                         | Relative L² error |
-| -------------------------- | ------------------------------------------ | ----------------- |
-| Burgers (1-D viscous)      | `Burgers/train_burgers_base.py`            | ~1e-3             |
-| Burgers (high-capacity)    | `Burgers/train_burgers_highcap.py`         | ~5e-4             |
-| Allen-Cahn                 | `AllenCahn/train_ac_base.py`               | ~5e-3             |
-| Allen-Cahn (M=8)           | `AllenCahn/train_ac_manyrules.py`          | ~5e-4             |
-| KdV                        | `KdV/train_kdv_base.py`                    | ~3e-3             |
-| Poisson 2-D (AMP=0.1, K=8) | `Poisson/train_poisson_2d.py`              | ~1e-3             |
-| Poisson 2-D high-freq      | `Poisson/train_poisson_highfreq.py`        | ~5e-3             |
-| Poisson 3-D                | `Poisson/train_poisson_3d.py`              | ~5e-3             |
-| NS cylinder wake — `u`     | `NavierStokes/train_ns_time_partition.py`  | ~5e-4             |
-| NS cylinder wake — `v`     | (same)                                     | ~3e-3             |
-| NS cylinder wake — `p`     | (same)                                     | ~2e-2             |
+| PDE                        | Script (this repo)                         
+| -------------------------- | ------------------------------------------ 
+| Burgers (1-D viscous)      | `Burgers/train_burgers_base.py`            
+| Burgers (high-capacity)    | `Burgers/train_burgers_highcap.py`         
+| Allen-Cahn                 | `AllenCahn/train_ac_base.py`               
+| Allen-Cahn (M=8)           | `AllenCahn/train_ac_manyrules.py`          
+| KdV                        | `KdV/train_kdv_base.py`                    
+| Poisson 2-D                | `Poisson/train_poisson_2d.py`              
+| Poisson 3-D                | `Poisson/train_poisson_3d.py`              
+| NS cylinder wake — `u`     | `NavierStokes/train_ns_time_partition.py`  
+| NS cylinder wake — `v`     | (same)                                     
+| NS cylinder wake — `p`     | (same)                                     
 
-Refer to the manuscript for head-to-head comparisons against vanilla PINN,
+Refer to the manuscript for head-to-head comparisons against  PINN,
 APINN, FPINN, SA-PINN and CausalPINN under identical settings.
 
 ---
