@@ -330,23 +330,7 @@ the paper. The GitHub "Cite this repository" button reads from
 [`CITATION.cff`](CITATION.cff).
 
 ```bibtex
-@software{saneie_epinn_af_2026,
-  author  = {Saneie, Aminhossein},
-  title   = {ePINN-AF: Enhanced Physics-Informed Neural Networks with
-             Attention-Fuzzy Logic},
-  year    = {2026},
-  version = {1.0.0},
-  url     = {https://github.com/<YOUR_USERNAME>/ePINN-AF},
-}
 
-@article{saneie_epinn_af_paper_2026,
-  author  = {Saneie, Aminhossein},
-  title   = {ePINN-AF: An Attention-Fuzzy Enhanced Physics-Informed Neural
-             Network for Solving Partial Differential Equations},
-  journal = {<journal name once published>},
-  year    = {2026},
-  note    = {Preprint / under review}
-}
 ```
 
 ---
@@ -354,9 +338,9 @@ the paper. The GitHub "Cite this repository" button reads from
 ## Contact
 
 **Aminhossein Saneie**
-✉ &nbsp; *[your.email@example.com]*  &nbsp; ← *please edit*
-🐙 &nbsp; [github.com/&lt;YOUR_USERNAME&gt;](https://github.com/<YOUR_USERNAME>)
-🔬 &nbsp; *Institution / affiliation* ← *please edit*
+✉ &nbsp; *[amin.hosseini1@aut.ac.ir]*  &nbsp; 
+🐙 &nbsp; [github.com/&lt;YOUR_USERNAME&gt;](https://github.com/<amiin10>)
+🔬 &nbsp; *Department of Mechanical Engineering, Amirkabir University of Technology (Tehran Polytechnic*
 
 Bug reports, feature requests, and questions are very welcome via
 [GitHub Issues](https://github.com/<YOUR_USERNAME>/ePINN-AF/issues).
