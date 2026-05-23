@@ -342,10 +342,10 @@ the paper. The GitHub "Cite this repository" button reads from
 
 🐙 &nbsp; [github.com/Amiin10](https://github.com/amiin10)
 
-🔬 &nbsp; *Department of Mechanical Engineering, Amirkabir University of Technology (Tehran Polytechnic*
+🔬 &nbsp; *Department of Mechanical Engineering, Amirkabir University of Technology (Tehran Polytechnic)*
 
 Bug reports, feature requests, and questions are very welcome via
-[GitHub Issues](https://github.com/<YOUR_USERNAME>/ePINN-AF/issues).
+[GitHub Issues](https://github.com/amiin10/ePINN-AF/issues).
 
 ---
 
