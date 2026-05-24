@@ -187,12 +187,12 @@ of `torch.autograd.grad` calls) and an optimizer. See any of the
 
 | PDE                        | Script (this repo)                         
 | -------------------------- | ------------------------------------------ 
-| Burgers                    | `Burgers/train_burgers_base.py`            
-| Allen-Cahn                 | `AllenCahn/train_ac_base.py`               
-| KdV                        | `KdV/train_kdv_base.py`                    
-| Poisson 2-D                | `Poisson/train_poisson_2d.py`              
-| Poisson 3-D                | `Poisson/train_poisson_3d.py`              
-| NS cylinder wake — `u`     | `NavierStokes/train_ns_time_partition.py`  
+| Burgers                    | `Burgers/`            
+| Allen-Cahn                 | `AllenCahn/`               
+| KdV                        | `KdV/`                    
+| Poisson 2-D                | `Poisson/`              
+| Poisson 3-D                | `Poisson/`              
+| NS cylinder wake — `u`     | `NavierStokes/`  
 | NS cylinder wake — `v`     | (same)                                     
 | NS cylinder wake — `p`     | (same)                                     
 
