@@ -109,9 +109,9 @@ ePINN-AF/
 ## Installation
 
 ```bash
-git clone https://github.com/<amiin10>/ePINN-AF.git
+git clone https://github.com/amiin10/ePINN-AF.git
 cd ePINN-AF
-python -m venv .venv && source .venv/bin/activate   # optional
+python -m venv .venv && source .venv/bin/activate   
 pip install -r requirements.txt
 ```
 
