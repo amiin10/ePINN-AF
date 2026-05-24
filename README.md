@@ -142,10 +142,7 @@ datasets/
 Each PDE folder contains one or more `train_*.py` scripts. They are
 self-contained — pick one and run it:
 
-```bash
-python Burgers/train_burgers_base.py        # ~3-5 min on a GPU
-python Burgers/plot_burgers.py              # produces burgers_base_results.png
-```
+
 
 The training script saves a pickle (e.g. `burgers_base_results.pkl`) with
 the prediction, reference, errors, loss history, and configuration. The
@@ -190,10 +187,8 @@ of `torch.autograd.grad` calls) and an optimizer. See any of the
 
 | PDE                        | Script (this repo)                         
 | -------------------------- | ------------------------------------------ 
-| Burgers (1-D viscous)      | `Burgers/train_burgers_base.py`            
-| Burgers (high-capacity)    | `Burgers/train_burgers_highcap.py`         
+| Burgers                    | `Burgers/train_burgers_base.py`            
 | Allen-Cahn                 | `AllenCahn/train_ac_base.py`               
-| Allen-Cahn (M=8)           | `AllenCahn/train_ac_manyrules.py`          
 | KdV                        | `KdV/train_kdv_base.py`                    
 | Poisson 2-D                | `Poisson/train_poisson_2d.py`              
 | Poisson 3-D                | `Poisson/train_poisson_3d.py`              
