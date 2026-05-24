@@ -16,7 +16,7 @@ softmax attention.*
 
 <br/>
 
-<img src="assets/architecture.svg" alt="ePINN-AF architecture" width="90%"/>
+<img src="Schematic.png" alt="ePINN-AF architecture" width="90%"/>
 
 </div>
 
